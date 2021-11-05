@@ -1,5 +1,6 @@
 package com.example.mycryptocurrencyapp.data.dto
 
+import com.example.mycryptocurrencyapp.domain.model.CoinDetails
 import com.google.gson.annotations.SerializedName
 
 data class CoinDetailsDTO(
@@ -39,4 +40,15 @@ data class CoinDetailsDTO(
     val team: List<TeamMember>,
     val type: String,
     val whitepaper: Whitepaper
+)
+
+fun CoinDetailsDTO.toCoinDetails() = CoinDetails(
+    coinId = id,
+    name = name,
+    description = description,
+    symbol = symbol,
+    rank = rank,
+    isActive = isActive,
+    tags = tags.map { it.name },
+    team = team
 )
