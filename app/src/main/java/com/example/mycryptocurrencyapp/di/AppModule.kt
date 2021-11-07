@@ -18,7 +18,7 @@ class AppModule {
 
     @Singleton
     @Provides
-    fun provideRetrofitInstance() = Retrofit.Builder()
+    fun provideRetrofitInstance(): CoinPaprikaAPI = Retrofit.Builder()
         .baseUrl(BASE_URL)
         .addConverterFactory(GsonConverterFactory.create())
         .build()
@@ -26,6 +26,6 @@ class AppModule {
 
     @Singleton
     @Provides
-    fun provideCoinRepository(api: CoinPaprikaAPI) = CoinRepositoryImpl(api)
+    fun provideCoinRepository(api: CoinPaprikaAPI): CoinRepository = CoinRepositoryImpl(api)
 
 }
