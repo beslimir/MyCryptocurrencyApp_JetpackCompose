@@ -1,6 +1,6 @@
 package com.example.mycryptocurrencyapp.data.dto
 
-import com.example.mycryptocurrencyapp.domain.model.CoinDetails
+import com.example.mycryptocurrencyapp.data.model.CoinDetails
 import com.google.gson.annotations.SerializedName
 
 data class CoinDetailsDTO(

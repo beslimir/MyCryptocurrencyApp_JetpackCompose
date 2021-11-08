@@ -1,7 +1,7 @@
 package com.example.mycryptocurrencyapp.domain.use_case
 
 import com.example.mycryptocurrencyapp.data.dto.toCoin
-import com.example.mycryptocurrencyapp.domain.model.Coin
+import com.example.mycryptocurrencyapp.data.model.Coin
 import com.example.mycryptocurrencyapp.domain.repository.CoinRepository
 import com.example.mycryptocurrencyapp.util.Resource
 import kotlinx.coroutines.flow.Flow

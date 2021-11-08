@@ -5,7 +5,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.mycryptocurrencyapp.domain.use_case.GetAllCoinsUseCase
-import com.example.mycryptocurrencyapp.presentation.CoinListState
+import com.example.mycryptocurrencyapp.presentation.coin_list.CoinListState
 import com.example.mycryptocurrencyapp.util.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.launchIn

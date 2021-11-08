@@ -6,7 +6,7 @@ import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.mycryptocurrencyapp.domain.use_case.GetCoinUseCase
-import com.example.mycryptocurrencyapp.presentation.CoinDetailsState
+import com.example.mycryptocurrencyapp.presentation.coin_details.CoinDetailsState
 import com.example.mycryptocurrencyapp.util.Constants.COIN_ID
 import com.example.mycryptocurrencyapp.util.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
