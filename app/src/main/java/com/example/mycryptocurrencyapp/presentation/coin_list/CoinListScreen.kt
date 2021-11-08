@@ -1,4 +1,4 @@
-package com.example.mycryptocurrencyapp.presentation.coin_details.components
+package com.example.mycryptocurrencyapp.presentation.coin_list
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -17,6 +17,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.example.mycryptocurrencyapp.presentation.Screen
+import com.example.mycryptocurrencyapp.presentation.coin_details.components.CoinListItem
 import com.example.mycryptocurrencyapp.presentation.view_models.CoinsViewModel
 
 @Composable

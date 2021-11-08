@@ -1,4 +1,4 @@
-package com.example.mycryptocurrencyapp.presentation.coin_details.components
+package com.example.mycryptocurrencyapp.presentation.coin_details
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -16,6 +16,8 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.example.mycryptocurrencyapp.presentation.coin_details.components.CoinTag
+import com.example.mycryptocurrencyapp.presentation.coin_details.components.TeamListItem
 import com.example.mycryptocurrencyapp.presentation.view_models.CoinDetailsViewModel
 import com.google.accompanist.flowlayout.FlowRow
 
