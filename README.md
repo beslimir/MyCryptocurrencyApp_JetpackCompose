@@ -13,4 +13,4 @@ and create the UI interface in
 
 - Jetpack Compose
 
-
+Info: in development branch I moved some logic from use case to repository.
