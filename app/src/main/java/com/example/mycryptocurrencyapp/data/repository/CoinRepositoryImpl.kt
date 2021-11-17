@@ -20,7 +20,7 @@ class CoinRepositoryImpl @Inject constructor(
         try {
             emit(Resource.Loading<List<Coin>>())
             val coins = api.getAllCoins()
-            emit(Resource.Success<List<Coin>>(coins))
+            emit(Resource.Success<List<Coin>>(coins.map { it.toCoin() }))
         } catch(e: HttpException) {
             emit(Resource.Error<List<Coin>>(e.localizedMessage ?: "An unexpected error occurred"))
         } catch(e: IOException) {
